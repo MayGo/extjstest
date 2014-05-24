@@ -23,7 +23,11 @@ class DataGridController {
 					'name':resource.name,
 					'validFrom':resource.validFrom,
 					'validTo':resource.validTo,
-					'division':['id':resource.division.id, 'name':resource.division.name]
+					'division':[
+						'id':resource.division.id, 
+						'name':resource.division.name, 
+						'idTrail':resource.division.idTrail,
+						'nameTrail':resource.division.nameTrail]
 				]
 			}
 		] as JSON

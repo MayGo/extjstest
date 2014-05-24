@@ -18,3 +18,19 @@
 	<g:select id="headDivision" name="headDivision.id" from="${extjstest.Division.list()}" optionKey="id" value="${divisionInstance?.headDivision?.id}" class="many-to-one" noSelection="['null': '']"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: divisionInstance, field: 'idTrail', 'error')} ">
+	<label for="idTrail">
+		<g:message code="division.idTrail.label" default="Id Trail" />
+		
+	</label>
+	<g:textField name="idTrail" value="${divisionInstance?.idTrail}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: divisionInstance, field: 'nameTrail', 'error')} ">
+	<label for="nameTrail">
+		<g:message code="division.nameTrail.label" default="Name Trail" />
+		
+	</label>
+	<g:textField name="nameTrail" value="${divisionInstance?.nameTrail}"/>
+</div>
+

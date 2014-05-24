@@ -17,7 +17,7 @@ class TestDataService {
 				(1..10).each{subSubNr->
 					
 					
-					Division subSubDivion = Division.build(name:"SubSubDivision $subNr -> $subSubNr", headDivision:subHeadDivision)
+					Division subSubDivion = Division.build(name:"SubSubDivision $subSubNr", headDivision:subHeadDivision)
 					(1..3).each{
 						
 						

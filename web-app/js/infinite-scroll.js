@@ -12,7 +12,7 @@ Ext.onReady(function(){
         fields: [
             'id', 'name', {
                 name: 'division',
-                mapping: 'division.name',
+                mapping: 'division.nameTrail',
                 type: 'string'
             },  {
                 name: 'validFrom',

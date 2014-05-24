@@ -41,6 +41,24 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${divisionInstance?.idTrail}">
+				<li class="fieldcontain">
+					<span id="idTrail-label" class="property-label"><g:message code="division.idTrail.label" default="Id Trail" /></span>
+					
+						<span class="property-value" aria-labelledby="idTrail-label"><g:fieldValue bean="${divisionInstance}" field="idTrail"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${divisionInstance?.nameTrail}">
+				<li class="fieldcontain">
+					<span id="nameTrail-label" class="property-label"><g:message code="division.nameTrail.label" default="Name Trail" /></span>
+					
+						<span class="property-value" aria-labelledby="nameTrail-label"><g:fieldValue bean="${divisionInstance}" field="nameTrail"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

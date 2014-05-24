@@ -28,6 +28,10 @@
 					
 						<th><g:message code="division.headDivision.label" default="Head Division" /></th>
 					
+						<g:sortableColumn property="idTrail" title="${message(code: 'division.idTrail.label', default: 'Id Trail')}" />
+					
+						<g:sortableColumn property="nameTrail" title="${message(code: 'division.nameTrail.label', default: 'Name Trail')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +41,10 @@
 						<td><g:link action="show" id="${divisionInstance.id}">${fieldValue(bean: divisionInstance, field: "name")}</g:link></td>
 					
 						<td>${fieldValue(bean: divisionInstance, field: "headDivision")}</td>
+					
+						<td>${fieldValue(bean: divisionInstance, field: "idTrail")}</td>
+					
+						<td>${fieldValue(bean: divisionInstance, field: "nameTrail")}</td>
 					
 					</tr>
 				</g:each>
