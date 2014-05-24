@@ -4,6 +4,8 @@ class Division {
 
     String name
 	Division headDivision
+	String idTrail
+	String nameTrail
 
     static mapping = { sort "name" }
 
