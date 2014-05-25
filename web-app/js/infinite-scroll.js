@@ -10,7 +10,7 @@ Ext.onReady(function(){
     Ext.define('ForumThread', {
         extend: 'Ext.data.Model',
         fields: [
-            'id', 'name', {
+            'name', {
                 name: 'division',
                 mapping: 'division.nameTrail',
                 type: 'string'
